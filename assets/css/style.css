@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Lato,sans-serif;
+}
+/* Nguyên tác làm việc từ trên xuống dưới từ ngoài vào trong */
+
+/*
+1. Vị trí
+2. Kích thước (width, height)
+3. Màu sắc 
+4. Kiểu dáng (Kiểu chữ, hình dáng)
+ */
+
+#wrapper {}
+
+#header {
+    --headerheghit: 46px;
+    height: var(--headerheghit);
+    background-color: #000;
+
+}
+
+#nav {}
+
+#nav li {
+    display: inline-block;
+}
+#nav li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: var(--headerheghit);
+    padding: 12px 24px;
+    font-size: 15px;
+}
+#nav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+}
+
+#slider {}
+
+#content {}
+
+#footer {}
