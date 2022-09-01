@@ -21,32 +21,70 @@ html {
     --headerheghit: 46px;
     height: var(--headerheghit);
     background-color: #000;
-
+position: fixed;
+width: 100%;
 }
 
-#nav {}
-
-#nav li {
+#nav {
+}
+#nav {
+    position: relative;
+}
+#nav li, .subnav li {
+    list-style-type: none;
+}
+#nav > li {
     display: inline-block;
 }
-#nav li a{
+
+#nav > li > a{
     color: #fff;
     text-decoration: none;
     line-height: var(--headerheghit);
     padding: 12px 24px;
     font-size: 15px;
 }
-#nav li:hover a{
+#nav > li:hover > a{
     color: #000;
+    background-color: #ccc;
+   
+}
+.nav-icon{
+    font-size: 10px;
+}
+#nav > li:hover .subnav{
+    display: block;
+}
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+#nav .subnav li a {
+    text-decoration: none;
+    line-height: 36px;
+    padding: 0px 16px;
+    font-size: 15px;
+    display: block;
+}
+#nav .subnav li:hover a {
+    color: black;
     background-color: #ccc;
 }
 
-#nav .subnav {
-    display: none;
+#slider {
+    background-color: #333;
+    min-height: 500px;
 }
 
-#slider {}
-
-#content {}
+#content {
+    height: 1000px;
+}
 
 #footer {}
