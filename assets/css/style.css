@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
-    font-family: Lato,sans-serif;
+    font-family: Lato, sans-serif;
 }
+
 /* Nguyên tác làm việc từ trên xuống dưới từ ngoài vào trong */
 
 /*
@@ -14,6 +16,13 @@ html {
 3. Màu sắc 
 4. Kiểu dáng (Kiểu chữ, hình dáng)
  */
+.text-white {
+    color: #fff !important;
+}
+
+.clear {
+    clear: both;
+}
 
 #wrapper {}
 
@@ -21,40 +30,51 @@ html {
     --headerheghit: 46px;
     height: var(--headerheghit);
     background-color: #000;
-position: fixed;
-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
 }
 
 #nav {
-}
-#nav {
-    position: relative;
-}
-#nav li, .subnav li {
-    list-style-type: none;
-}
-#nav > li {
     display: inline-block;
 }
 
-#nav > li > a{
+#nav {
+    position: relative;
+}
+
+#nav li,
+.subnav li {
+    list-style-type: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav>li>a {
     color: #fff;
     text-decoration: none;
     line-height: var(--headerheghit);
     padding: 12px 24px;
     font-size: 15px;
 }
-#nav > li:hover > a{
+
+#nav>li:hover>a {
     color: #000;
     background-color: #ccc;
-   
+
 }
-.nav-icon{
+
+.nav-icon {
     font-size: 10px;
 }
-#nav > li:hover .subnav{
+
+#nav>li:hover .subnav {
     display: block;
 }
+
 #nav .subnav {
     display: none;
     min-width: 160px;
@@ -73,18 +93,146 @@ width: 100%;
     font-size: 15px;
     display: block;
 }
+
 #nav .subnav li:hover a {
     color: black;
     background-color: #ccc;
 }
 
+#search-icon {
+    float: right;
+    line-height: var(--headerheghit);
+    padding: 0 20px;
+}
+
+#header>#search-icon>a {
+    text-decoration: none;
+}
+
+#header .search {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+#search-icon:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
 #slider {
+    margin-top: 46px;
     background-color: #333;
     min-height: 500px;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.text-content {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: aliceblue;
+}
+
+.text-header {
+    margin: 15px;
+    font-weight: 50%;
+}
+
+.text-discristion {
+    margin-top: 15px;
 }
 
 #content {
     height: 1000px;
+}
+
+.session-content {
+    min-width: 65%;
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px;
+}
+
+.session-header {
+    text-align: center;
+    padding: 0 0 16px 0;
+    letter-spacing: 4px;
+}
+
+.session-sologan {
+    text-align: center;
+    font-style: italic;
+    padding: 0 0 16px 0;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+#about {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.member-list {
+    margin-top: 36px;
+}
+
+.member-item {
+    float: left;
+    width: 33.333333%;
+    text-align: center;
+}
+
+.member-name {
+    padding: 0 0 16px 0;
+}
+
+.member-avatar {
+    padding: 15px 0 0 0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.tour {
+    background-color: #000;
+}
+
+.tickits-list {
+    background-color: #fff;
+}
+
+.tickits-list > li {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0 12px 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.tickits-list .sold-out {
+    padding: 2px 10px;
+    background-color: red;
+    color: white;
+    margin-left: 16px;
+}
+
+.tickits-list .quantity {
+    float: right;
+    width: 24px;
+    color: #fff;
+    border-radius: 50%;
+    height: 24px;
+    background-color: #000;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -3px;
+    margin-right: 10px;
 }
 
 #footer {}
