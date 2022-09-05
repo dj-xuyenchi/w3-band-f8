@@ -153,11 +153,12 @@ html {
 }
 
 .session-content {
-    min-width: 65%;
-    max-width: 65%;
+    min-width: 45%;
+    max-width: 45%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px;
+    box-sizing: content-box;
 }
 
 .session-header {
@@ -207,7 +208,7 @@ html {
     background-color: #fff;
 }
 
-.tickits-list > li {
+.tickits-list>li {
     border-bottom: 1px solid #ddd;
     padding: 12px 0 12px 10px;
     margin-top: 0;
@@ -235,4 +236,110 @@ html {
     margin-right: 10px;
 }
 
-#footer {}
+.show {
+    min-width: 46%;
+    max-width: 46%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    padding-bottom: 80px;
+}
+
+.show-info {
+    float: left;
+    margin-top: 24px;
+    width: 33.33333%;
+    margin: 0 1% 0 1%;
+    background-color: #fff;
+}
+
+.show-img {
+    width: 100%;
+}
+
+.show .show-img:hover {
+    opacity: 0.6;
+}
+
+.show-header {
+    padding: 16px 0 8px 16px;
+}
+
+.show-time {
+    padding: 12px 0 8px 16px;
+    color: rgb(82, 82, 82);
+}
+
+.show-detail {
+    padding: 12px 0 8px 16px;
+}
+
+.btn-tickit {
+    background-color: #000;
+    margin-top: 15px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 45%;
+    text-align: center;
+    padding: 12px 2px;
+    margin-left: 12px;
+}
+
+#footer {
+    height: 1000px;
+}
+
+
+
+
+.model-buytickit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  
+
+}
+
+.model-header {
+    position: relative;
+    background-color: #009688;
+    height: 15%;
+    width: 55%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.model-header .close-btn {
+    position: absolute;
+    right: 0;
+    padding: 10px 10px;
+}
+
+.close-btn:hover {
+    background-color: #ddd;
+}
+
+.header-items {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tichkit-text {
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.model-body {
+    height: 15%;
+    width: 55%;
+}
+
+.model-footer {}
