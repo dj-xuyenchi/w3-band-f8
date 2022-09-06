@@ -284,8 +284,13 @@ html {
     text-align: center;
     padding: 12px 2px;
     margin-left: 12px;
+    border: none;
 }
-
+.btn-tickit:hover{
+color: black;
+background-color: #ddd;
+    cursor: pointer;
+}
 #footer {
     height: 1000px;
 }
@@ -300,17 +305,26 @@ html {
     bottom: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.4);
-  
-
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: model-buyTickit-frame ease .3s;
+}
+.open{
+    display: flex;
+}
+.wrapper {
+    height: 70%;
+    width: 45%;
+    /* max-width: calc(45%-36px); */
 }
 
 .model-header {
-    position: relative;
+position: relative;
     background-color: #009688;
-    height: 15%;
-    width: 55%;
-    margin-top: 0;
-    margin-bottom: 0;
+    height: 20%;
+    width: 100%;
+ 
 }
 
 .model-header .close-btn {
@@ -338,8 +352,56 @@ html {
 }
 
 .model-body {
-    height: 15%;
-    width: 55%;
+    height: 35%;
+    width: 100%;
+    background-color: #fff;
+}
+.label-input{
+    padding: 16px 0 4px 24px;
+}
+.model-input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 8px;
+    width: 94%;
+    margin-top: 4px;
+    margin-left: 3%;
+}
+.model-pay{
+    height: 20%;
+    margin-bottom: 8px;
+    width: 94%;
+    margin-top: 8px;
+    margin-left: 3%;
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+}
+.model-footer {
+    height: 10%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
 }
 
-.model-footer {}
+#model-help{
+    position: absolute;
+    right: 3%;
+    
+}
+#help{
+    text-decoration: none;
+    color: blue;
+}
+
+
+@keyframes model-buyTickit-frame{
+    from{
+        transform: translateY(-140px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+
+}
