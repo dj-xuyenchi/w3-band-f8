@@ -394,7 +394,7 @@ html {
 .footer-style-font {
     padding: 0 8px 0 0;
     font-size: 24px;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 .text-decora {
@@ -407,8 +407,8 @@ html {
     text-decoration: none;
 }
 
-.link-icon:hover {
-    color: #000;
+.footer-style-font :hover {
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .link-fb {
