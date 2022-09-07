@@ -12,6 +12,7 @@
 
 <body>
     <div id="wrapper">
+        <!-- Header Begin -->
         <div id="header">
             <ul id="nav">
                 <li><a href="">Home</a></li>
@@ -36,6 +37,8 @@
                 </a>
             </div>
         </div>
+        <!-- Header End -->
+        <!-- Slider Begin -->
         <div id="slider">
             <div class="text-content">
                 <div class="text-header">
@@ -46,6 +49,8 @@
                 </div>
             </div>
         </div>
+        <!-- Slider End -->
+        <!-- Content Begin -->
         <div id="content">
             <div class="session-content">
                 <h2 class="session-header">THE BAND</h2>
@@ -126,17 +131,66 @@
                     <div class="clear"></div>
                 </div>
             </div>
+            <div class="contact">
+                <div class="session-content">
+                    <h2 class="session-header">CONTACT</h2>
+                    <p class="session-sologan">Fan? Drop a note!</p>
+                    <div class="contact-info">
+                        <p class="text-contact"><i class="icon-contac ti-location-pin"></i>Chicago, US</p>
+                        <p class="text-contact"><i class="icon-contac ti-mobile"></i>Phone: +84 968491797</p>
+                        <p class="text-contact"><i class="icon-contac ti-email"></i>Email: do.quanganh99zz@mail.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <form action="">
+                            <input type="text" required class="input-nameemail" placeholder="Name">
+                            <input type="text" required class="input-nameemail" placeholder="Email">
+                            <input type="text" required class="input-mess" placeholder="Messege">
+                            <input type="submit" class="contact-send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <img src="./assets/img/Contact/map.jpg" alt="" class="img-map">
+            </div>
         </div>
+        <!-- Content End -->
+        <!-- Footer Begin -->
         <div id="footer">
-
+            <div class="footer-place">
+                <a href="https://github.com/doquanganh99zz" class="link-icon">
+                    <p class="footer-style-font"><i class="ti-github"></i></p>
+                </a>
+                <a href="https://github.com/doquanganh99zz" class="link-icon">
+                    <p class="footer-style-font"><i class="ti-youtube"></i></p>
+                </a>
+                <a href="https://github.com/doquanganh99zz" class="link-icon">
+                    <p class="footer-style-font"><i class="ti-instagram"></i></p>
+                </a>
+                <a href="https://github.com/doquanganh99zz" class="link-icon">
+                    <p class="footer-style-font"><i class="ti-trello"></i></p>
+                </a>
+                <a href="https://github.com/doquanganh99zz" class="link-icon">
+                    <p class="footer-style-font"><i class="ti-linkedin"></i></p>
+                </a>
+            </div>
+            <div class="footer-place footer-style-font">
+                <p class="powered-web">Cover by
+                    <a href="https://www.facebook.com/xuyenchi0902hihihi" class="link-fb">
+                        <p class="footer-style-font text-decora">DJ-XuyenChi</p>
+                    </a>
+                </p>
+            </div>
         </div>
+        <!-- Footer End -->
     </div>
+    <!-- Model Buy Tickit Begin -->
     <div class="model-buytickit">
         <div class="wrapper">
             <div class="model-header">
                 <!-- <div class="close-btn"> -->
-                    <i class="close-btn ti-close">
-                    </i>
+                <i class="close-btn ti-close">
+                </i>
                 <!-- </div> -->
                 <div class="header-items">
                     <p class="tichkit-text">
@@ -158,6 +212,7 @@
         </div>
 
     </div>
+    <!-- Model Buy Tickit End -->
 
     <script>
         const btnList = document.querySelectorAll('.btn-tickit');
@@ -170,12 +225,12 @@
         function showBuyTicket() {
             modelBuyTickit.classList.add('open');
         }
-        for(const btn of btnList){
-            btn.addEventListener('click',showBuyTicket);
+        for (const btn of btnList) {
+            btn.addEventListener('click', showBuyTicket);
         }
-        modelBuyTickit.addEventListener('click',hideBuyTicket);
-        closeBtn.addEventListener('click',hideBuyTicket);
-        wrapper.addEventListener('click',function(event){
+        modelBuyTickit.addEventListener('click', hideBuyTicket);
+        closeBtn.addEventListener('click', hideBuyTicket);
+        wrapper.addEventListener('click', function (event) {
             event.stopPropagation();
         })
     </script>
