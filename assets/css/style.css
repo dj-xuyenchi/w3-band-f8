@@ -531,3 +531,62 @@ html {
     }
 
 }
+
+
+/* Responsive */
+/* Table */
+@media only screen and (max-width:63.9375em) and (min-width: 46.25em) {
+    .session-content {
+        min-width: 95%;
+    }
+
+    .show {
+        min-width: 95%;
+    }
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+    .session-content {
+        min-width: 95%;
+    }
+
+    .member-item {
+        float: none;
+        width: 100%;
+    }
+
+    .member-avatar {
+        width: 60%;
+        padding: 0.2em 0 3em 0;
+    }
+
+    .member-name {
+        padding: 0 0 0.1em 0;
+    }
+
+    .show {
+        width: 95%;
+        max-width: 95%;
+        display: block;
+    }
+
+    .show-info {
+        float: none;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .show-header{
+        padding: 1em 0 8px 0.25em;
+    }
+    .show-time{
+     padding: 1em 0 8px 0.25em;
+    }
+    .show-detail{
+        padding: 1em 0 8px 0.25em;
+    }
+    .btn-tickit{
+        margin-left: 0.1875em;
+    }
+}
