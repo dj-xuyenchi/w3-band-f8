@@ -98,14 +98,17 @@ html {
 #nav .subnav li:hover a {
     color: black;
     background-color: #ccc;
+    width: 100%;
 }
 
+#menu-icon,
 #search-icon {
     float: right;
     line-height: var(--headerheghit);
     padding: 0 20px;
 }
 
+#header>#menu-icon>a,
 #header>#search-icon>a {
     text-decoration: none;
 }
@@ -520,6 +523,9 @@ html {
     color: blue;
 }
 
+#menu-icon {
+    display: none;
+}
 
 @keyframes model-buyTickit-frame {
     from {
@@ -542,6 +548,17 @@ html {
 
     .show {
         min-width: 95%;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+    
+    .model-buytickit .wrapper {
+        width: 90%;
+    }
+    .model-buytickit .model-body{
+        height: 40%;
     }
 }
 
@@ -577,16 +594,69 @@ html {
         width: 100%;
         margin-bottom: 1em;
     }
-    .show-header{
+
+    .show-header {
         padding: 1em 0 8px 0.25em;
     }
-    .show-time{
-     padding: 1em 0 8px 0.25em;
-    }
-    .show-detail{
+
+    .show-time {
         padding: 1em 0 8px 0.25em;
     }
-    .btn-tickit{
+
+    .show-detail {
+        padding: 1em 0 8px 0.25em;
+    }
+
+    .btn-tickit {
         margin-left: 0.1875em;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav>li {
+        display: block;
+        background-color: #000;
+
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #slider {
+        min-height: auto;
+    }
+
+    #search-icon {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #menu-icon:hover {
+        background-color: rgb(99, 99, 99);
+        cursor: pointer;
+    }
+
+    #nav>li>a{
+        padding-right: 100%;
+    }
+
+    #menu-bar{
+        padding-right: 24px !important;
+    }
+
+    .model-buytickit .wrapper {
+        width: 90%;
+    }
+    .model-buytickit .model-body{
+        height: 40%;
     }
 }

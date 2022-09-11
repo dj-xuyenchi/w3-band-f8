@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>W3-Band</title>
-    <link rel="shortcut icon" type="image/jpg" href="./assets/img/Contact/html-flat.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/img/Contact/html-flat.png" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
@@ -16,25 +16,30 @@
         <!-- Header Begin -->
         <div id="header">
             <ul id="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#Tour">Tour</a></li>
-                <li><a href="#Band">Band</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="">
+                <li><a href="#" id="menu-bar">Home</a></li>
+                <li><a href="#Tour" >Tour</a></li>
+                <li><a href="#Band" >Band</a></li>
+                <li><a href="#Contact" >Contact</a></li>
+                <li><a href="" id="menu-bar">
                         More
                         <i class="nav-icon ti-angle-down"></i>
 
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Viet Nam Tour</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
+                        <li><a href="#">Viet Nam Tour</a></li>
+                        <li><a href="#">Seul Tour</a></li>
+                        <li><a href="#">Ahihi Crush!</a></li>
                     </ul>
                 </li>
             </ul>
             <div id="search-icon">
-                <a href="">
+                <a href="#">
                     <i class="search ti-search"></i>
+                </a>
+            </div>
+            <div id="menu-icon">
+                <a href="#">
+                    <i class="search ti-menu"></i>
                 </a>
             </div>
         </div>
@@ -234,6 +239,31 @@
         wrapper.addEventListener('click', function (event) {
             event.stopPropagation();
         })
+
+        /////////////////////////
+        const menuBarMobile = document.getElementById('menu-icon');
+        const header = document.getElementById('header');
+        var open = false;
+        console.log(header);
+        menuBarMobile.onclick = function () {
+            if (open === false) {
+                open = true;
+                header.style.overflow = 'unset';
+            } else {
+                open = false;
+                header.style.overflow = 'hidden';
+            }
+
+        }
+///////////////////
+        const menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        
+        for (var i = 0; i < menuItems.length; i++) {
+            menuItems[i].onclick = function () {
+                open = false;
+                header.style.overflow = 'hidden';
+            }
+        }
     </script>
 </body>
 
