@@ -93,6 +93,7 @@ html {
     padding: 0px 16px;
     font-size: 15px;
     display: block;
+    color: #000;
 }
 
 #nav .subnav li:hover a {
@@ -658,5 +659,9 @@ html {
     }
     .model-buytickit .model-body{
         height: 40%;
+    }
+    #nav .subnav li a{
+        padding: 0 35px;
+        color: #000;
     }
 }
