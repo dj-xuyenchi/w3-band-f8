@@ -664,4 +664,11 @@ html {
         padding: 0 35px;
         color: #000;
     }
+    #nav .subnav{
+        min-width: 100%;
+        background-color: rgb(37, 37, 37);
+    }
+    #nav .subnav li a {
+        color: aliceblue;
+    }
 }
